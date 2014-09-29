@@ -1,4 +1,4 @@
-<adc>
+<adc name="Pointeurs">
   <need>
     <file name="variables.xml"/>
   </need>
@@ -24,7 +24,7 @@
       <answer value="0">30</answer>
       <answer value="1">20</answer>
     </question>
-    <min value="1"/>
+    <min>1</min>
   </test>
 
   <lesson>
