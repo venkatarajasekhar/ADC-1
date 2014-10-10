@@ -1,9 +1,9 @@
 //
 // epur.cpp for epur in /home/jaccar_a/Documents/ADC
-// 
+//
 // Made by Quentin Jaccarino
 // Login   <jaccar_a@localhost.localdomain>
-// 
+//
 // Started on  Mon Sep 29 00:17:36 2014 Quentin Jaccarino
 // Last update Mon Sep 29 00:43:43 2014 Quentin Jaccarino
 //
