@@ -1,13 +1,3 @@
-//
-// main.cpp for main in /home/jaccar_a/Documents/ProjEpitech/adc
-//
-// Made by Quentin Jaccarino
-// Login   <jaccar_a@localhost.localdomain>
-//
-// Started on  Sun Sep 28 16:16:17 2014 Quentin Jaccarino
-// Last update Thu Oct  2 02:20:24 2014 Quentin Jaccarino
-//
-
 #include <iostream>
 #include <fstream>
 #include <sstream>
