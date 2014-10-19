@@ -1,18 +1,35 @@
 #ifndef XMLOBJ_HPP
 #define XMLOBJ_HPP
 
+#include <vector>
+#include <utility>
+#include <string>
+#include "rapidxml.hpp"
+#include "LessonObj.hpp"
+#include "TestObj.hpp"
+
+class XmlObj;
+
+typedef	std::vector<std::pair<char *, XmlObj*> > fileType;
+
 class	XmlObj {
-    public:
-        XmlObj(const string &filename);
-        ~XmlObj();
+public:
+  XmlObj(char *filename);
+  ~XmlObj();
 
-        Initialize();
+  void	init(const fileType &files);
+  void	printInfo();
+  
+private:
+  XmlObj *findXmlObj(const fileType &files, char *filename);
 
-    private:
-        string filename;
-        std::vector<XmlObj*> need;
-        TestObj tests;
-        LessonObj lesson;
+  rapidxml::xml_document<> doc;
+  rapidxml::xml_node<> *pRoot;
+  std::vector<XmlObj*> need;
+  LessonObj lesson;
+  TestObj tests;
+  char *lessonName;
+  std::string content;
 };
 
-#endif // XMLOBJ_HPP
+#endif

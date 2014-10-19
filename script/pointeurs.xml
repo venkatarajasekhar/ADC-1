@@ -6,20 +6,20 @@
   <test>
     <question>
       <text>
-        What is the output of following program ?
+What is the output of following program ?
 
-        void fun(int x)
-        {
-        x = 30;
-        }
+void fun(int x)
+{
+  x = 30;
+}
 
-        int main()
-        {
-        int y = 20;
-        fun(y);
-        printf("%d", y);
-        return 0;
-        }
+int main()
+{
+  int y = 20;
+  fun(y);
+  printf("%d", y);
+  return 0;
+}
       </text>
       <answer value="0">30</answer>
       <answer value="1">20</answer>

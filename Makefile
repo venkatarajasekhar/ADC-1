@@ -5,17 +5,23 @@
 ## Login   <jaccar_a@epitech.net>
 ## 
 ## Started on  Sun Sep 28 22:17:41 2014 Quentin Jaccarino
-## Last update Mon Sep 29 00:18:15 2014 Quentin Jaccarino
+## Last update Sun Oct 19 03:58:05 2014 Quentin Jaccarino
 ##
 
 NAME=		adc
 
-SRC=		src/main.cpp \
-		src/epur.cpp
+SRC=		src/Error.cpp \
+		src/main.cpp \
+		src/epur.cpp \
+		src/XmlObj.cpp \
+		src/TestObj.cpp \
+		src/QuestionObj.cpp \
+		src/AnswerObj.cpp \
+		src/LessonObj.cpp \
 
 OBJ=		$(SRC:.cpp=.o)
 
-CXXFLAGS=	-W -Wall -Wextra -Iinc/
+CXXFLAGS=	-W -Wall -Wextra -Iinc/ -g
 
 all:		$(NAME)
 
