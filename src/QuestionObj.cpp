@@ -12,6 +12,9 @@ QuestionObj::QuestionObj(rapidxml::xml_node<> *pQuestion) {
 }
 
 QuestionObj::~QuestionObj() {
+  for (std::vector<AnswerObj *>::iterator it = answers.begin();
+       it != answers.end(); it++)
+    if (*it) delete *it;
 }
 
 void	QuestionObj::printInfo() {

@@ -1,14 +1,13 @@
 #include <iostream>
-#include "XmlObj.hpp"
+#include "XmlManager.hpp"
 #include "Error.hpp"
 
 int	main() {
   try {
-    fileType files;
-    XmlObj pointers((char *)"script/pointeurs.xml");
+    XmlManager xmlManager("./script/");
 
-    pointers.init(files);
-    pointers.printInfo();
+    xmlManager.initAll();
+    xmlManager.printAllInfo();
   }
   catch (Error &e) {
     std::cerr << e.what() << " in " << e.where() << std::endl;

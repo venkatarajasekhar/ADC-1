@@ -5,7 +5,7 @@
 ## Login   <jaccar_a@epitech.net>
 ## 
 ## Started on  Sun Sep 28 22:17:41 2014 Quentin Jaccarino
-## Last update Sun Oct 19 03:58:05 2014 Quentin Jaccarino
+## Last update Mon Oct 20 01:39:31 2014 Quentin Jaccarino
 ##
 
 NAME=		adc
@@ -13,6 +13,7 @@ NAME=		adc
 SRC=		src/Error.cpp \
 		src/main.cpp \
 		src/epur.cpp \
+		src/XmlManager.cpp \
 		src/XmlObj.cpp \
 		src/TestObj.cpp \
 		src/QuestionObj.cpp \

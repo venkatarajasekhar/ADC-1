@@ -6,6 +6,9 @@ TestObj::TestObj() {
 }
 
 TestObj::~TestObj() {
+  for (std::vector<QuestionObj *>::iterator it = questions.begin();
+       it != questions.end(); it++)
+    if (*it) delete *it;
 }
 
 void	TestObj::parse(rapidxml::xml_node<> *pRoot) {
